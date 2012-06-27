@@ -2,12 +2,22 @@
 CHANGELOG
 =========
 
-1.0.6 (in progress)
-===================
+1.1 (dev)
+=========
+
+ * added --upgrade to init to perform a configuration upgrade
+ * changed configuration format from INI to YAML (~/.gondor can remain in INI format)
+ * added --no-on-deploy to deploy command which will prevent running of
+   on_deploy commands
+ * improved run to use the new interactive process on Gondor
+
+1.0.6
+=====
 
  * improved path handling of file argument to database:load
  * fixed formatting of errors when deploying
  * gondor run no longer needs -- to delimit run options from command options
+ * fixed bug on Python 2.6 in database:load
 
 1.0.5
 =====
